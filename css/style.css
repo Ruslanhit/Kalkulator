@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .Kalkulator {
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgb(44, 44, 44);
+  }
+  .container {
+    display: grid;
+    grid-template-areas:"f f f f f f"
+                        "i i i i i i"
+                        "o o o o o o"
+                        "n n n n n n"
+                        "b b b b b b";
+  }
+
+.headerSite { grid-area: f; }
+/* .numberOne{ grid-area: i; }
+.number2ne { grid-area: b; } */
+.numbersInput {grid-area: i;}
+.button { grid-area: o; }
+.buttonSubmit { grid-area: n; }
+.result { grid-area: b; }
+
+.container {
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 40px;
+    /* background-color: rgba(82, 29, 179, 0.5); */
+    text-align: center;
+    /* max-width: 50%;
+    min-width: 450px; */
+    width: clamp(450px, 70%, 800px);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: clamp(100px, 30%, 250px);
+  }
+  /* =======================кнопка сложения */
+  .buttonPlus {
+    color:aliceblue;
+    background-color: rgb(219, 46, 46);
+    /* border-color: rgb(9, 9, 182); */
+    border-radius: 20px;
+    width: 30vw;
+    max-width: 300px;
+    height: 15vw;
+    max-height: 50px;
+    margin-top: 20px;
+    font-size: 70%;
+    text-align: center;
+    text-decoration: none;
+    border:none;
+  }
+  .buttonPlus:hover {
+    background-color: aliceblue;
+    color:rgb(219, 46, 46);
+  }
+  .buttonPlus:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(219, 46, 46);
+  }
+/* =======================кнопка вычитания */
+  .buttonMinus {
+    color:aliceblue;
+    background-color: rgb(9, 9, 182);
+    /* border-color: rgb(219, 46, 46); */
+    border-radius: 20px;
+    width: 30vw;
+    max-width: 300px;
+    height: 15vw;
+    max-height: 50px;
+    font-size: 70%;
+    text-align: center;
+    border:none;
+  }
+  .buttonMinus:hover {
+    background-color: aliceblue;
+    color:rgb(9, 9, 182);
+  }
+
+  .buttonMinus:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 9, 182);
+  }
+/* ========================Кнопка рассчитать */
+  .buttonSumSubmit{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(235, 27, 38);
+    border-radius: 10px;
+    width: 30vw;
+    max-width: 200px;
+    height: 13vw;
+    max-height: 60px;
+    font-size: 50%;
+    text-align: center;
+    border:none;
+    margin-top: 25px;
+  }
+  .buttonSumSubmit:hover {
+    background-color: rgb(105, 173, 233);
+  }
+
+  .buttonSumSubmit:focus {
+    background-color: rgb(105, 173, 233);
+  }
+
+/* =======================кнопка деления */
+  .buttonDelenie {
+    color:aliceblue;
+    background-color: rgb(9, 9, 182);
+    border-radius: 20px;
+    width: 30vw;
+    margin-top: 20px;
+    max-width: 300px;
+    height: 15vw;
+    max-height: 50px;
+    font-size: 70%;
+    text-align: center;
+    border:none;
+  }
+
+  .buttonDelenie:hover {
+    background-color: aliceblue;
+    color:rgb(9, 9, 182);
+  }
+
+  .buttonDelenie:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 9, 182);
+  }
+/* =====================кнопка умножения */
+  .buttonUmnogenie {
+    color:aliceblue;
+    background-color:  rgb(235, 27, 38);
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 30vw;
+    max-width: 300px;
+    height: 15vw;
+    max-height: 50px;
+    font-size: 70%;
+    text-align: center;
+    border:none;
+  }
+
+  .buttonUmnogenie:hover {
+    background-color: aliceblue;
+    color:rgb(235, 27, 38);
+  }
+
+  .buttonUmnogenie:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(235, 27, 38);
+  }
+
+/* ==================первый input */
+  .numberOne {
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    max-width: 300px;
+    height: 7vw;
+    max-height: 45px;
+    font-size: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  /* ==================второй input */
+  .number2ne {
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    max-width: 300px;
+    height: 7vw;
+    max-height: 45px;
+    font-size: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  /* ==================Загаловок калькулятор */
+.headerSite{
+ font-size: clamp(30px, 5vw, 50px);
+ color: aliceblue;
+ margin-top: 20px;
+}
+
+/* ======================Вывод результата */
+.result {
+  color:aliceblue;
+  /* font-size: clamp(25px, 50%, 40px); */
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
